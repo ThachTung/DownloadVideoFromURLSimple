@@ -25,7 +25,7 @@ def runPowerShell(url,prefix,suffix):
     else:
         folder = dirPath
         path1 = folder
-        destVar = "$dest=" + "\"" + folder + "\"+" + "$randomName" + "\n"
+        destVar = "$dest=" + "\"" + folder + "\\\"+" + "$randomName" + "\n"
 
     sourceVar = "$source=" + "\"" + str(url) + "\"" + "\n"
     randomNum = "$randomNumber=Get-Random" + "\n"
